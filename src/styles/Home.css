@@ -1,0 +1,429 @@
+/* Home page styles */
+.home-page {
+  overflow-x: hidden;
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+  min-height: 600px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.hero-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 570px;
+  margin-right: 2rem;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #0C8BC9;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s 0.3s forwards;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #555;
+  animation: fadeInUp 1s 0.6s forwards;
+  opacity: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  animation: fadeInUp 1s 0.9s forwards;
+  opacity: 0;
+}
+
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-image {
+  max-width: 100%;
+  max-height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInRight 1s 0.6s forwards;
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Impact section */
+.impact-section {
+  padding: 5rem 1rem;
+  background-color: #f0f8ff;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.impact-stat {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.impact-stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0C8BC9;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Mission section */
+.mission-section {
+  padding: 5rem 1rem;
+  background-color: white;
+}
+
+.mission-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.mission-card {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-icon {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 1.5rem;
+}
+
+.mission-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.mission-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  color: #0C8BC9;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-more svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0a6fa1;
+  text-decoration: none;
+}
+
+.read-more:hover svg {
+  transform: translateX(5px);
+}
+
+/* News section */
+.news-section {
+  padding: 5rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  color: #0C8BC9;
+  font-weight: 500;
+}
+
+.view-all svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.view-all:hover {
+  color: #0a6fa1;
+}
+
+.view-all:hover svg {
+  transform: translateX(5px);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.news-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.news-card:hover .news-title {
+  color: #0C8BC9;
+}
+
+.news-excerpt {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA section */
+.cta-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #0C8BC9, #0a6fa1);
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 2rem;
+}
+
+.cta-buttons .btn-donate {
+  background-color: #FF8C00;
+}
+
+.cta-buttons .btn-donate:hover {
+  background-color: #e67e00;
+}
+
+.cta-buttons .btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    max-height: 350px;
+  }
+
+  .mission-areas {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .impact-stat {
+    min-width: 150px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons, .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn, .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .mission-card {
+    min-width: 100%;
+  }
+
+  .impact-stat {
+    min-width: 100%;
+  }
+} 
